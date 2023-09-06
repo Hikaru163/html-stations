@@ -1,0 +1,96 @@
+body{
+    background-color: #c4c4c4;
+}
+
+header{
+    background-color: #ffffff;
+}
+
+footer{
+    background-color: #ffffff;
+}
+
+
+
+.card__title{
+    color: #282828;
+    font-size: 14px;
+}
+
+.card__description{
+    color:#282828;
+    font-size: 12px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    padding:10px;
+    background-color: #fff;
+}
+
+.card__img-top{
+    width: 288px;
+    height: 182px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+/*PC*/
+@media (min-width:1201px){
+    .card__title{
+        color: #282828;
+    font-size: 14px;
+    }
+}
+
+.card__description{
+    color:#282828;
+    font-size: 12px;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .card__title{
+      color: #282828;
+      font-size: smaller; /* タイトルの文字を小さくする */
+  }
+
+  .card__description{
+      color:#282828;
+      font-size: smaller; /* 説明の文字を小さくする */
+      overflow : hidden; /* 文字がはみ出たら隠す */
+      text-overflow : ellipsis; /* 文字がはみ出たら三点リーダーにする */
+      white-space : nowrap; /* 改行を無視する */
+  }
+}
+
+/* スマホ */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .card__title{
+        color: #282828;
+        font-size: smaller; /* タイトルの文字を小さくする */
+    }
+  
+    .card__description{
+        color:#282828;
+        font-size: smaller; /* 説明の文字を小さくする */
+        text-overflow : ellipsis; /* 文字がはみ出たら三点リーダーにする */
+    }
+  }
+  
+  /* スマホ */
+  @media (max-width: 768px) {
+    .card__title{
+        color: #282828;
+        font-size: smaller; /* タイトルの文字を小さくする */
+    }
+  
+    .card__description{
+        display:none; /* 説明を消す */
+    }
+  }
